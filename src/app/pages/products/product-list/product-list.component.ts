@@ -1,22 +1,22 @@
 import { Component, inject } from '@angular/core';
-import {ProductsService} from '../../../services/products.service'
+import { ProductsStateService } from '../../../services/products-state.service';
+import { RouterLink } from '@angular/router';
+import { ProductCardComponent } from "../ui/product-card/product-card.component";
+
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, ProductCardComponent],
   templateUrl: './product-list.component.html',
   styles: ``,
-  providers: [ProductsService],
+  providers: [ProductsStateService],
 })
 export default class ProductListComponent {
+  productsState = inject(ProductsStateService);
+  product: unknown;
 
-  private productService = inject(ProductsService)
+  
 
-  constructor() {
-    this.productService.getProducts().subscribe((products) => {
-      console.log(products)
-    });
-  }
 }
  
