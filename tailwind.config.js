@@ -5,8 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth:{
+        'custom': '10px'
+      },
+      letterSpacing:{
+        'custom': '0.08em'
+      },
       borderRadius:{
-        'custom': '70px'
+        'custom': '70px',
+        '50%': '50%'
       }
     },
   },
