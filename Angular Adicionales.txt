@@ -1,0 +1,19 @@
+Cosas para instalar en angular 
+
+material UI para hacer components de interfaces facilmente
+Busca la pagina de material UI
+
+ngextension para tener mas funcionalidades a la hora de realizar algo
+ng add ngxtension
+
+
+Angular ESlint para como se va a ver el codigo o sea identacion
+ng add @angular-eslint/schematics
+npm install prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier --save-dev
+https://gist.github.com/eneajaho/17bbcf71c44eabf56d404b028572b97b
+
+Averiguar como hacer una sistema de calificaciones para una tienda
+
+Estudiar mucho lo observables, los signals, y los estados. Tambien los pipes
+
+Buscar como establecer cantidad de objetos por pagina y como establecer los limites ya supiste como hacer el forward
